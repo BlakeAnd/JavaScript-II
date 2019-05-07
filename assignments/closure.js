@@ -26,4 +26,13 @@ const counterFactory = () => {
   // Return an object that has two methods called `increment` and `decrement`.
   // `increment` should increment a counter variable in closure scope and return it.
   // `decrement` should decrement the counter variable and return it.
+  counter = 0;
+  countObject = {
+    "add" : function increment(){
+      counter += 1;
+    },
+    "subt" : function decrement(){
+      counter -= 1;
+    }
+  }
 };

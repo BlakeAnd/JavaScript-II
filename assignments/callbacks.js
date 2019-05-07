@@ -61,25 +61,30 @@ function multer(prod){
   console.log('product is', prod);
 }
 multiplyNums(3,9, multer);
-
+/*
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-  
-  /*
   list.forEach(function(){
     if(item === true){
       cb(true);
-    } else {
-      cb(false);
-    }
-  });
+    } 
+  }); 
 }
-function show(tf){
-  console.log(tf);
+function thingHere(isHere){
+  console.log(isHere);
 }
-contains('Pencil', items, show)
+contains('Pencil', items, thingHere); 
 */
+
+function contains(element, list, cb) {
+  return cb(list.includes(element));
+}
+function thingHere(isHere){
+  console.log(isHere);
+}
+contains('yo-yo', items, thingHere);
+
 
 
 /* STRETCH PROBLEM */
